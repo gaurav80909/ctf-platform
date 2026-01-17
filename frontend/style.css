@@ -1,0 +1,90 @@
+body{
+  margin:0;
+  background:black;
+  color:#00ffff;
+  font-family:Segoe UI,sans-serif;
+  overflow:hidden;
+}
+
+/* ===== Canvas BG ===== */
+#cyberCanvas{
+  position:fixed;
+  inset:0;
+  z-index:-1;
+}
+
+/* ===== TOP ROW MENU ===== */
+.menu{
+  position:absolute;
+  top:20px;
+  left:20px;
+  display:flex;
+  flex-direction:row;
+  gap:15px;
+}
+
+.menu a{
+  padding:12px 22px;
+  border:2px solid #00ffff;
+  border-radius:10px;
+  background:#050814;
+  color:#00ffff;
+  text-decoration:none;
+  font-size:16px;
+  box-shadow:0 0 12px #00ffff66;
+  transition:0.3s;
+}
+
+.menu a:hover{
+  background:#00ffff;
+  color:black;
+  box-shadow:0 0 20px #00ffff;
+}
+
+/* ===== Center Text ===== */
+.centerText{
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:32px;
+  text-shadow:0 0 15px #00ffff;
+}
+
+/* ===== Question Card ===== */
+.centerCard{
+  width:420px;
+  margin:auto;
+  margin-top:180px;
+  padding:25px;
+  text-align:center;
+  background:rgba(5,8,30,0.95);
+  border:2px solid #00ffff;
+  border-radius:15px;
+  box-shadow:0 0 25px #00ffff;
+}
+
+.centerCard h2{ margin-bottom:10px; }
+.centerCard p{ margin-bottom:15px; color:#7ffcff; }
+
+input{
+  width:100%;
+  padding:10px;
+  border:2px solid #00ffff;
+  border-radius:8px;
+  background:black;
+  color:#00ffff;
+  font-size:15px;
+  outline:none;
+}
+
+button{
+  margin-top:12px;
+  padding:8px 20px;
+  background:#00ffff;
+  border:none;
+  border-radius:6px;
+  font-weight:bold;
+  cursor:pointer;
+  box-shadow:0 0 15px #00ffff;
+}
